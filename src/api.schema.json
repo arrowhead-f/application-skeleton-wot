@@ -1,8 +1,8 @@
 {
     "openapi": "3.0.1",
     "info": {
-        "title": "WoT-ArrowHead Adapter",
-        "description": "The WoT-ArrowHead Adapter converts Web Things to ArrowHead services and converts ArrowHead services into Web Things.",
+        "title": "application-skeleton-wot",
+        "description": "The application-skeleton-wot converts Web Things to Arrowhead services and converts Arrowhead services into Web Things",
         "contact": {
             "email": "ivandimitry.ribeiro@unibo.it",
             "name": "Ivan Zyrianoff"
@@ -11,20 +11,20 @@
     },
     "servers": [
         {
-            "url": "http://177.104.61.116:3334"
+            "url": "http://localhost:3334"
         }
     ],
     "paths": {
         "/arrowhead": {
             "get": {
-                "description": "returns metadata about the ArrowHead calls",
+                "description": "returns metadata about the Arrowhead calls",
                 "responses": {
                     "200": {
                         "description": "successful operation",
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "$ref": "#/components/schemas/poolingArrowHead"
+                                    "$ref": "#/components/schemas/poolingArrowhead"
                                 }
                             }
                         }
@@ -101,10 +101,10 @@
     },
     "components": {
         "schemas": {
-            "poolingArrowHead": {
+            "poolingArrowhead": {
                 "type": "object",
                 "properties": {
-                    "lastArrowHeadCall": {
+                    "lastArrowheadCall": {
                         "type": "object",
                         "properties": {
                             "timestamp": {
@@ -160,8 +160,8 @@
             "poolingManagement": {
                 "type": "object",
                 "properties": {
-                    "poolingArrowHead": {
-                        "$ref": "#/components/schemas/poolingArrowHead"
+                    "poolingArrowhead": {
+                        "$ref": "#/components/schemas/poolingArrowhead"
                     },
                     "wotRepository": {
                         "$ref": "#/components/schemas/poolingWoT"

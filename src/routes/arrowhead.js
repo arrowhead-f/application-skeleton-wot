@@ -9,7 +9,7 @@ module.exports = (router) => {
         res.json(poolingMetadata.get());
       } catch (err) {
         logger.error('error 503 at /arrow - service unavailable');
-        res.status(503).send("wot-arrowhead adapter is currently unavailable");
+        res.status(503).send("application-skeleton-wot is currently unavailable");
       }
     })
     .post((req, res) => {
@@ -33,8 +33,8 @@ module.exports = (router) => {
           res.status(200).send(`service ${req.body.systemName} successfully added to the monitored arrowhead service list`);
         }
       } catch (err) {
-        logger.error('error 503 at /arrow - service unavailable');
-        res.status(503).send("wot-arrowhead adapter is currently unavailable");
+        logger.error('error 503 at /arrowhead - service unavailable');
+        res.status(503).send("application-skeleton-wot is currently unavailable");
       }
     });
 }

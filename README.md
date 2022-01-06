@@ -1,8 +1,8 @@
 [![Site: IoTPrismLab](https://img.shields.io/badge/site-IoT%20Prism%20Lab-blue)](http://iot-prism-lab.nws.cs.unibo.it/)
 
-# WoT-Arrowhead Adapter
+# application-skeleton-wot
 
-The WoT-Arrowhead Adapter (WAE) converts Web Things to Arrowhead services and converts Arrowhead services into Web Things.
+The application-skeleton-wot converts Web Things to Arrowhead services and converts Arrowhead services into Web Things.
 
 ## Usage with Docker
 
@@ -16,7 +16,7 @@ You can check your current **Docker** version using the following commands:
 $ docker version
 ```
 
-WAE has a docker image ready to be used publically available in [DockerHub](https://hub.docker.com/repository/docker/ivanzy/wot-arrowhead-enabler). In order to instantiate the container run the following commands with admin privileges:
+The application has a docker image ready to be used publicly available in [DockerHub](https://hub.docker.com/repository/docker/ivanzy/wot-arrowhead-enabler). In order to instantiate the container run the following commands with admin privileges:
 
 ```console
 $ docker pull ivanzy/wot-arrowhead-enabler
@@ -26,10 +26,10 @@ $ docker run -p 3333:3333 -p 3334:3334 ivanzy/wot-arrowhead-enabler
 It is also possible to build and run the container from the project directory;
 
 ```console
-$ git clone https://github.com/UniBO-PRISMLab/wot-arrowhead-adapter
-$ cd wot-arrowhead-adapter/
-$ docker build -t wot-arrowhead-adapter:1.0 .
-$ docker run -p 3333:3333 -p 3334:3334 --name wot-arrowhead-adapter wot-arrowhead-adapter:1.0 
+$ git clone https://github.com/arrowhead-f/application-skeleton-wot.git
+$ cd application-skeleton-wot/
+$ docker build -t application-skeleton-wot:1.1 .
+$ docker run -p 3333:3333 -p 3334:3334 --name application-skeleton-wot application-skeleton-wot:1.1 
 ```
 
 ## Usage with NPM
@@ -43,12 +43,12 @@ $ npm run start
 
 ## Test
 
-to test if the WoT-Arrowhead Adapter is running correctly, check your browser at <http://localhost:3334>, the response should be:
+to test if the application-skeleton-wot is running correctly, check your browser at <http://localhost:3334>, the response should be:
 ```json
 {
-   "status":"Arrowhead API Its Working",
-   "message":"Arrowhead version 1.0.0 is running",
-   "description":"The WoT-Arrowhead Adapter converts Web Things to Arrowhead services and converts Arrowhead services into Web Things"
+   "status":"application-skeleton-wot is working",
+   "message":"application-skeleton-wot is running",
+   "description":"The application-skeleton-wot converts Web Things to Arrowhead services and converts Arrowhead services into Web Things"
 }
 ```
 
@@ -56,7 +56,7 @@ The project API documentation can be consulted at <http://localhost:3334/docs-ap
 
 ## Configuration
 
-The WoT-Arrowhead Adapter configurations are defined in the [config.json file](src/config/conf.json)
+The application-skeleton-wot configurations are defined in the [config.json file](src/config/conf.json)
 
 
 ```json

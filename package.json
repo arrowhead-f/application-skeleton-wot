@@ -1,7 +1,7 @@
 {
-  "name": "wot-arrowheadAdapter",
-  "version": "1.0.0",
-  "description": "The WoT-ArrowHead Adapter converts Web Things to ArrowHead services and converts ArrowHead services into Web Things",
+  "name": "application-skeleton-wot",
+  "version": "1.1.0",
+  "description": "The application-skeleton-wot converts Web Things to ArrowHead services and converts ArrowHead services into Web Things",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",

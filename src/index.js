@@ -14,7 +14,7 @@ const getAuth = async () => {
 server.start()
   .then((res) => {
     logger.debug(res);
-    logger.info(`WoT-ArrowHead Adapter API up and running`)
+    logger.info(`application-skeleton-wot API up and running`)
   })
   .catch((err) => {
     logger.error(err);
