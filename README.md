@@ -4,6 +4,8 @@
 
 The application-skeleton-wot converts Web Things to Arrowhead services and converts Arrowhead services into Web Things.
 
+Further details on the operation of the application and a performance analysis can be found in [this paper](https://ieeexplore.ieee.org/abstract/document/9589619). We kindly ask to cite [the already mentioned paper](https://ieeexplore.ieee.org/abstract/document/9589619) if you utilized our tool in any academic project. 
+
 ## Usage with Docker
 
 ### Docker and Docker Compose
