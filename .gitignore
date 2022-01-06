@@ -116,3 +116,7 @@ dist
 .pnp.*
 
 .src/config/conf.json
+.vscode/templates/txt.lict
+src/test/demo.rest
+src/test/arrowhead2modron.rest
+src/test/demo.rest
